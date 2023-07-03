@@ -1,0 +1,56 @@
+.bigboy{
+    display: flex;
+    place-content: center;
+    height: auto;
+    width: auto;
+
+}
+
+
+
+
+.container{
+    margin: 100px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: grid;
+    height: 704px;
+    width: 504px;
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-columns:  500px;
+
+    grid-gap: 4px;
+
+    grid-template-areas: 
+        " hd  " 
+        "  main  "
+        'sidebar'
+        " footer "
+        ;
+    
+}
+
+
+
+.class{
+ 
+   border: 1px solid red;
+   background-color: aqua;
+}
+
+#header{
+
+    grid-area:hd;
+}
+
+#content{
+    grid-area: main;
+}
+
+#sidebar{
+    grid-area: sidebar;
+}
+
+#Footer{
+    grid-area: footer;
+}
