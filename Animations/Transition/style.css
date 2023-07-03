@@ -1,0 +1,36 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green ;
+    border: 3px solid red;
+    display: flex;
+    position: relative ;
+
+}
+.box{
+    background-color: aqua;
+    border: 2px solid blue;
+    
+    height: 150px;
+    width: 400px;
+    position: absolute;
+   
+    /*transition: transform 0.5s ease 0.5s; /*this is used to
+                                        transitoion a 
+                                        property either to 
+                                        rotate or color change
+                                        at diffrent speed , 2nd opton 
+                                        is used to tell kb tk vo transition 
+                                        you want , the fourth tells how 
+                                        slow or how much fast */
+
+   /* transform: background-color  ease 0.5s;*/
+   transition: transform 3s ease-in;
+
+}
+.box:hover{
+    background-color: brown;
+    /*transform: rotate(45deg);*/
+    transform: scale(2) rotate(90deg) translateX(500px);
+   
+}
